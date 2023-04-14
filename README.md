@@ -1,5 +1,3 @@
-# Windows-Verkefni og lukas
-
 3.1.2.5 Lab:
 
 What key or combination of keys is used to run Setup on your computer?
@@ -353,8 +351,6 @@ In what type of situation would an IT administrator delete a user account and ch
 If the employee quits or is fired but the files are important to the company
 
 
-
-
 11.2.5.8 Lab - Manage Virtual Memory
 Step 1:  Open System Properties
 What is the current size of the virtual memory (paging file)?
@@ -392,15 +388,158 @@ The other options are disable device and uninstall devices.
 
 11.3.1.11 Lab - Monitor and Manage System Resources - Sleppa Windows Defender hlutanum, byrja á Part 2 (print spooler)
 
+What is the status of the service?
+In Windows 10 and 8.1: the status is Running. In Windows 7, the status is Started.
+
+Look for Windows Defender Antivirus Network Inspection Service (Windows 10) or Windows Defender Service (Windows 8.1) or Window Defender (Windows 7). Record the Windows Defender status.
+There is no status because it is turned off.
+
+In the General tab, what is listed as the Source of the event? What is the severity level?
+The severity level is informational for all Windows version. In Windows 10, the source is Security Center. In Windows 8.1, the source is Service Control Manager. In Windows 7, the source is Service Control Manager.
+
+Record a listed printer below. Note: You do not need to install a physical printer.
+Microsoft XPS Document Writer is a print-to-file driver is installed by Windows.
+
+What message did you receive? How would you fix this?
+Before you can perform printer-related tasks such as page setup or printing a document, you need to install a printer. You will need to restart the print spooler.
+
+When DHCP Client stops, what other services will also be stopped?
+Windows 10: IP Helper, WinHTTP Web Proxy Auto-Discovery Service, Network List Service, and Network Location Awareness.
+
+Why is it important to exercise care when managing services?
+Applications and other services may depend on a given service to work. Stopping a service can compromise the operation of other services.
+
+What does the column farthest to the right show?
+Available memory in MBytes.
+
 
 11.3.2.7 Lab - System Utilities
+
+Part 1:Custom Management Console
+Step 1:Explore the management console.
+What was the path you use to navigate to the Event Viewer?
+Your console > Management Tools > Computer Management > System Tools > Event Viewer
+Part 2:Registry Editor
+What is the background picture?
+Blue Whale
+What is the data value of the Background (hint – it has three numbers that correspond to red, green, and blue)?
+0 99 177.
+Step 3:Export a registry key.
+What is the data value of the Background?
+0 99 177 in the example.
+What is the data value of the Background? Compare the new value in the Registry to the value saved in BlueBKG.reg.
+The value is for any shade of red.
+Step 4:Import a registry file.
+What is the data value of the Background?
+0 99 177
+What is the color of the desktop?
+Red
+What is the color of the desktop?
+Blue
+Why would it be beneficial to add snap-ins to the mmc that are for other computers on the network?
+It would make it easy to configure and monitor other computers that do not have monitors, keyboards or mice, or that are not easily accessible.
+After restarting the computer, why was the desktop color changed?
+Importing the registry file modified the registry to contain a value for the desktop that was not the same as the current value. When the computer started, this value was read from the registry to make the desktop that color.
 
 
 11.3.2.8 Lab - Manage System Files
 
+Step 1:Review the System Information.
+Processor:
+INTEL CORE i3-4160 SR1PK 3.60GHZ X543B938
+BIOS Version/Date:
+AMI 80.07, 6/5/2013
+Total Physical Memory:
+16 GB
+Under the Hardware Resources heading, locate and list the following:
+DMA channels and the device using the resources.
+Channel 4Direct memory access controller
+Under the Components heading locate and list the following:
+Adapter Description:
+Radeon RX 580 Series
+Adapter RAM:
+1,048,576 bytes
+Under the Software Environment heading, where would you find the applications that automatically load when the computer boots?
+Startup Programs
+What are the startup options?
+Normal startup, Diagnostic startup, or Selective startup.
+Can you enable and disable services at this tab?
+Yes
+What can you do in this tab?
+Launch Windows built-in utilities.
+What does this tool report?
+Detailed information about the DirectX components and drivers installed on the system.
+What information is listed on this page?
+Device, Drivers, and DirectX Features
+What information is listed on this page?
+Device and Drivers
+What information is listed on this page?
+A list of input devices
+Why would it be beneficial to turn off a service in the system configuration?
+It may be beneficial to turn off a service if that service may have become unresponsive, or if a service is using too many resources.
+When would you use the startup tab of the system configuration tool?
+There may be programs that you do not wish to start when the computer boots.
+
 
 11.4.1.5 Lab - Work in the Windows Command Shell
 
+Part1;
+Step1:
+To see the next page, press the spacebar. What happens when you press enter?
+It only advances one line at a time.
+
+Press q or Ctrl-C to exit after filling out the functions of the following commands:
+Command
+Function
+CD
+Displays the name of or changes the current directory.
+CHKDSK
+Checks a disk and displays a status report.
+COPY
+Copies one or more files to another location.
+DEL
+Deletes one or more files.
+DIR
+Displays a list of files and subdirectories in a directory.
+DISKPART
+Displays or configures Disk Partition properties.
+EXIT
+Quits the CMD.EXE program.
+FORMAT
+Formats a disk for use with Windows.
+GPRESULT
+Displays Group Policy information for machine or user.
+MD
+Creates a directory.
+TASKLIST
+Display all currently running tasks including services.
+RD
+Removes a directory.
+ROBOCOPY
+Advanced utility to copy files and directory trees.
+SHUTDOWN
+Allows proper local or remote shutdown of a computer.
+XCOPY
+Copies files and directory trees.
+
+
+
+How would you create these folders C:\Users\ITEUser\a\b\c if your current directory is C:\Users\ITEUser?
+Either of the following command would accomplish the task:
+C:\Users\ITEUser> md a\b\c
+C:\Users\ITEUser> mkdir a\b\c
+What command would you use to verify the creation of the nested directories?
+The commands are dir to list the directory and chdir or cd to change directory.
+
+What command did you use?
+C:\Users\ITEUser> cls
+
+
+What is the last command that you have used? Press Esc on the keyboard to exit the dialog box.
+It is probably the command cls to clear the screen.
+ 
+What is the last command?
+It is probably the command cls to clear the screen.
 
 11.4.2.7 Lab - File System Commands
 
@@ -552,22 +691,6 @@ Step2:
 What is the local drive letter assigned to the connected resource? 
 Y
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 11.5.2.4 Lab 
 
 Step3:
@@ -585,7 +708,7 @@ Can you delete the Brief file? What happens?
 No. Access is denied.
 
 Step5:
- What are the default permissions?
+What are the default permissions?
 Everyone has Read permissions.
 
 
@@ -600,16 +723,64 @@ Yes
 Can you delete the Brief file? What happens?
 Yes. Access is granted this time.
 
+
 What can you do to assign a drive letter to your partner’s shared folder?
 Mapping the shared folder to a drive letter using Map network drive.
 
-
-
-
-
 11.5.6.2 Lab
 
+Part1:
+
+step1:
+Record the name of this computer.
+LAPTOP-G8BNB6E4
 
 
+What is the current Remote Desktop Port?
+3389.
 
 
+What CLI command would you use to get the IP address?
+Ipconfig.
+
+
+Step2:
+Username:
+John doe
+
+
+Password:
+12345678
+
+
+Step3:
+What message is displayed on the remote computer and how much time is mentioned?
+The user on remote computer has 30 seconds to deny the remote desktop connection or approve it. If the user on remote computer does nothing, the remote desktop is allowed after 30 seconds.
+
+Part2:
+Step1:
+
+What is the default amount of time remote assistance invitations remain open?
+The default is 6 hours.
+
+What are the ways to send an invitation to a trusted person with Remote Assistance?
+A saved invitation file, via an email invitation, or using Easy Connect.
+
+Reflective questions:
+
+What type of scenarios are most appropriate for Remote Assistance in contrast with Remote Desktop?
+
+Answers may vary but should include that Remote Assistance is best suited in helping a user troubleshoot issues on their computer. Remote Desktop is best suiting for a user that needs to remotely connect to a different computer to access resources.
+
+
+How many simultaneous users can access a Windows computer at a single time?
+
+Only 1 user can access the Windows desktop at a time. If a local user is on a computer, they are disconnected. If the local user returns, the remote desktop connection is disconnected.
+What type of security components are implemented with Windows Remote Desktop?
+
+Answers may vary but should include authentication and encryption.
+
+
+How could remote desktop be used as a beneficial technology in the workplace?
+
+Answers will vary but may include remote connectivity to control a computer/server at a remote site or room.

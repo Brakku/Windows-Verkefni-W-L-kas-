@@ -778,9 +778,9 @@ How many simultaneous users can access a Windows computer at a single time?
 Only 1 user can access the Windows desktop at a time. If a local user is on a computer, they are disconnected. If the local user returns, the remote desktop connection is disconnected.
 What type of security components are implemented with Windows Remote Desktop?
 
-Answers may vary but should include authentication and encryption.
+should include authentication and encryption.
 
 
 How could remote desktop be used as a beneficial technology in the workplace?
 
-Answers will vary but may include remote connectivity to control a computer/server at a remote site or room.
+may include remote connectivity to control a computer/server at a remote site or room.

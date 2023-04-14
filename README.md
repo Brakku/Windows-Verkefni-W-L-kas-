@@ -1,4 +1,4 @@
-# Windows-Verkefni-W-L-kas-
+# Windows-Verkefni og lukas
 
 3.1.2.5 Lab:
 

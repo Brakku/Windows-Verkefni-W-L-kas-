@@ -489,38 +489,22 @@ To see the next page, press the spacebar. What happens when you press enter?
 It only advances one line at a time.
 
 Press q or Ctrl-C to exit after filling out the functions of the following commands:
-Command
-Function
-CD
-Displays the name of or changes the current directory.
-CHKDSK
-Checks a disk and displays a status report.
-COPY
-Copies one or more files to another location.
-DEL
-Deletes one or more files.
-DIR
-Displays a list of files and subdirectories in a directory.
-DISKPART
-Displays or configures Disk Partition properties.
-EXIT
-Quits the CMD.EXE program.
-FORMAT
-Formats a disk for use with Windows.
-GPRESULT
-Displays Group Policy information for machine or user.
-MD
-Creates a directory.
-TASKLIST
-Display all currently running tasks including services.
-RD
-Removes a directory.
-ROBOCOPY
-Advanced utility to copy files and directory trees.
-SHUTDOWN
-Allows proper local or remote shutdown of a computer.
-XCOPY
-Copies files and directory trees.
+
+CD - Displays the name of or changes the current directory.
+CHKDSK - Checks a disk and displays a status report.
+COPY - Copies one or more files to another location.
+DEL - Deletes one or more files.
+DIR - Displays a list of files and subdirectories in a directory.
+DISKPART - Displays or configures Disk Partition properties.
+EXIT - Quits the CMD.EXE program.
+FORMAT - Formats a disk for use with Windows.
+GPRESULT - Displays Group Policy information for machine or user.
+MD - Creates a directory.
+TASKLIST - Display all currently running tasks including services.
+RD - Removes a directory.
+ROBOCOPY - Advanced utility to copy files and directory trees.
+SHUTDOWN - Allows proper local or remote shutdown of a computer.
+XCOPY - Copies files and directory trees.
 
 
 
